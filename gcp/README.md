@@ -4,6 +4,7 @@
 cd gcp/
 
 gcloud functions deploy http_to_bq \
+--set-env-vars PROJECT_ID=<your-project-id>
 --trigger-http \
 --allow-unauthenticated
 ```
